@@ -49,7 +49,7 @@ export const TokenDetail = ({
   return (
     <div className={className}>
       <motion.div
-        className="absolute left-4 top-8 z-10 rounded-full cursor-pointer"
+        className="absolute left-4 top-4 z-10 rounded-full cursor-pointer"
         whileHover="hover"
         variants={iconVariant}
         initial="unHovered"
@@ -63,7 +63,7 @@ export const TokenDetail = ({
       </motion.div>
       {isOpen && (
         <motion.div
-          className={`top-64 custom-scroll absolute bottom-0 z-10 w-full max-w-[1080px] overflow-y-auto`}
+          className={`absolute max-w-[1080px] z-10 w-full bottom-0 overflow-y-auto custom-scroll`}
           animate={currentAnimate}
           variants={variants}
           initial="closed"

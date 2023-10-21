@@ -31,23 +31,15 @@ export const Panel = ({
       </div>
 
       <div className="flex justify-center">
-      {/* <img className="w-[74%]" src="https://i.ibb.co/zrS9ZGc/image.png" /> */}
+      <img className="w-[50%]" src="https://i.ibb.co/zrS9ZGc/image.png" />
 
-        <ul className="custom-scroll grid grid-cols-3 gap-2 overflow-y-auto">
+        {/* <ul className="custom-scroll grid grid-cols-3 gap-2 overflow-y-auto">
           <img className="list-none" src="https://i.ibb.co/zrS9ZGc/image.png" />
           <img className="list-none" src="https://i.ibb.co/ZJqW4HD/image.png" />
           <img className="list-none" src="https://i.ibb.co/zGNcvsk/image.png" />
 
-        </ul>
+        </ul> */}
       </div>
-
-
-        {/* <div className="flex items-start space-x-2 rounded-lg border-0 bg-tb-warning-secondary p-2">
-          <div className="h-5 min-h-[20px] w-5 min-w-[20px]">
-          
-          </div>
-          
-        </div> */}
 
     </div>
   );
