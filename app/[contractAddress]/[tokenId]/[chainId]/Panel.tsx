@@ -33,7 +33,7 @@ export const Panel = ({
       <div className="flex justify-center">
       {/* <img className="w-[74%]" src="https://i.ibb.co/zrS9ZGc/image.png" /> */}
 
-        <ul className="mt-16 custom-scroll grid grid-cols-3 gap-2 overflow-y-auto">
+        <ul className="custom-scroll grid grid-cols-3 gap-2 overflow-y-auto">
           <img className="list-none" src="https://i.ibb.co/zrS9ZGc/image.png" />
           <img className="list-none" src="https://i.ibb.co/ZJqW4HD/image.png" />
           <img className="list-none" src="https://i.ibb.co/zGNcvsk/image.png" />

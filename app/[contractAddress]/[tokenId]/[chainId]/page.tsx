@@ -1,16 +1,12 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from "react";
-import useSWR from "swr";
 import { isNil } from "lodash";
 import { TokenboundClient } from "@tokenbound/sdk";
-import { getAccount, getAccountStatus, getLensNfts, getNfts } from "@/lib/utils";
-import { TbLogo } from "@/components/icon";
 import { useNft } from "@/lib/hooks";
 import { TbaOwnedNft } from "@/lib/types";
-import { getAddress } from "viem";
 import { TokenDetail } from "./TokenDetail";
-import { HAS_CUSTOM_IMPLEMENTATION, alchemyApiKey } from "@/lib/constants";
+import { HAS_CUSTOM_IMPLEMENTATION } from "@/lib/constants";
 
 interface TokenParams {
   params: {
