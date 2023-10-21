@@ -6,7 +6,7 @@ import { isNil } from "lodash";
 import { TokenboundClient } from "@tokenbound/sdk";
 import { getAccount, getAccountStatus, getLensNfts, getNfts } from "@/lib/utils";
 import { TbLogo } from "@/components/icon";
-import { useGetApprovals, useNft } from "@/lib/hooks";
+import { useNft } from "@/lib/hooks";
 import { TbaOwnedNft } from "@/lib/types";
 import { getAddress } from "viem";
 import { TokenDetail } from "./TokenDetail";
