@@ -1,9 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import clsx from "clsx";
+import { Database } from "@tableland/sdk";
+import { Wallet, getDefaultProvider } from "ethers";
+
 
 interface Props {
   className?: string;
   chainId: number;
+}
+
+interface TableData {
+  tokenid: number;
+  tokenvalue: number;
 }
 
 export const Panel = ({
@@ -22,23 +30,21 @@ export const Panel = ({
         <div className="h-[2.5px] w-[34px] bg-[#E4E4E4]"></div>
       </div>
       <h3 className="mt-16 font-palanquin text-center text-4xl font-bold text-slate-gray">
-      Scratch your way to 
-          <span className="text-coral-red"> Exciting  Rewards </span>
+        Your highway to
+        <span className="text-coral-red"> Exciting  Rewards </span>
 
-        </h3>
+      </h3>
       <div className="mt-32">
         <hr />
       </div>
 
       <div className="flex justify-center">
-      <img className="w-[50%]" src="https://i.ibb.co/zrS9ZGc/image.png" />
+        <img className="w-[50%]" src="https://bafybeihsdfvdfbj4xe7w4syiysathqpnuzaxve6yi5a2f6uczy7ogsuf3a.ipfs.nftstorage.link/" />
+      </div>
 
-        {/* <ul className="custom-scroll grid grid-cols-3 gap-2 overflow-y-auto">
-          <img className="list-none" src="https://i.ibb.co/zrS9ZGc/image.png" />
-          <img className="list-none" src="https://i.ibb.co/ZJqW4HD/image.png" />
-          <img className="list-none" src="https://i.ibb.co/zGNcvsk/image.png" />
 
-        </ul> */}
+      <div className={"h-full"}>
+        <p className="text-center text-sm text-gray-500">This coupon NFT can be redeemed on INVOICFY and is valid till 31/12/23</p>
       </div>
 
     </div>

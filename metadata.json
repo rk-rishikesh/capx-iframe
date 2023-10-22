@@ -1,8 +1,6 @@
 {
     "tokenId": 1,
-    "name": "Scratch Card",
-    "description": "Uncover digital treasures and unique rewards with each scratch in this immersive and thrilling NFT scratchcard experience.",
-    "image": "ipfs://bafkreie3o6c757osm7tb26oibk64xlnzbxc5la27jby5clp6xhjj4pr2y4",
-    "image_web": "ipfs://bafkreie3o6c757osm7tb26oibk64xlnzbxc5la27jby5clp6xhjj4pr2y4",
-    "animation_url": "https://thescratchcard.vercel.app/0x213fe403E86fd94aA21C0c9C23e6eb7881d09B1a/534351/1"
+    "name": "Invoicify Diamond Membership",
+    "description": "50 Invoices Per Month",
+    "image": "ipfs://bafkreie3o6c757osm7tb26oibk64xlnzbxc5la27jby5clp6xhjj4pr2y4"
 }
