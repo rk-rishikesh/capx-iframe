@@ -2,10 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from "react";
 import { isNil } from "lodash";
-import { TokenboundClient } from "@tokenbound/sdk";
 import { useNft } from "@/lib/hooks";
-import { TbaOwnedNft } from "@/lib/types";
-import { TokenDetail } from "./TokenDetail";
 import { HAS_CUSTOM_IMPLEMENTATION } from "@/lib/constants";
 
 interface TokenParams {
@@ -24,7 +21,6 @@ export default function Token({ params, searchParams }: TokenParams) {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const { tokenId, contractAddress, chainId } = params;
   const { disableloading, logo } = searchParams;
-  const [showTokenDetail, setShowTokenDetail] = useState(false);
   const chainIdNumber = parseInt(chainId);
 
   const {
@@ -65,18 +61,10 @@ export default function Token({ params, searchParams }: TokenParams) {
     <div className="h-screen w-screen bg-slate-100">
       <div className="max-w-screen relative mx-auto aspect-square max-h-screen overflow-hidden bg-white">
         <div className="relative h-full w-full">
-
-            <TokenDetail
-              isOpen={showTokenDetail}
-              handleOpenClose={setShowTokenDetail}
-              chainId={chainIdNumber}
-              tokenId={parseInt(tokenId as string)}
-              logo={logo}
-            />
           <div className="max-h-1080[px] relative h-full w-full max-w-[1080px]">
             {showLoading ? (
               <div className="absolute self-center left-[45%] top-[50%] z-10 h-20 w-20 -translate-x-[50%] -translate-y-[50%] animate-bounce">
-                {/* <TbLogo /> */}
+               {/* Loading Logo */}
                 <img src="https://cdn-icons-png.flaticon.com/512/5736/5736436.png" />
               </div>
             ) : (
@@ -86,7 +74,10 @@ export default function Token({ params, searchParams }: TokenParams) {
               >
                 {!isNil(nftImages) ? (
                   <>
-                    <div className="bg-[url(https://s3.amazonaws.com/ionic-marketplace/cordova-plugin-scratch/icon.jpg)] bg-cover">
+                    <div className="bg-[url(https://bafkreia5yfqizazgl4lnwm67nfdbpkxanbdd4t7ynu6kcganxfha5yujzq.ipfs.nftstorage.link/)] bg-cover">
+                      <div className="hello">
+                        <h1>42069</h1>
+                      </div>
                     </div>
                   </>
                 ) : (
