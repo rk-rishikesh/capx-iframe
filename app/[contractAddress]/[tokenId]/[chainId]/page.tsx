@@ -65,7 +65,7 @@ export default function Token({ params, searchParams }: TokenParams) {
             {showLoading ? (
               <div className="absolute self-center left-[45%] top-[50%] z-10 h-20 w-20 -translate-x-[50%] -translate-y-[50%] animate-bounce">
                {/* Loading Logo */}
-                <img src="https://cdn-icons-png.flaticon.com/512/5736/5736436.png" />
+                <img src="/logo.png" />
               </div>
             ) : (
               <div
